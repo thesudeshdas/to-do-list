@@ -1,0 +1,23 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "A To-Do-List App to organise stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesudeshdas/to-do-list.git"
+  },
+  "author": "Sudesh Kumar Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thesudeshdas/to-do-list/issues"
+  },
+  "homepage": "https://github.com/thesudeshdas/to-do-list#readme",
+  "devDependencies": {
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

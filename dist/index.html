@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do-List</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div id="content"></div>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+	
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyBI6mBLe50t5gMmr9EKQW8w-7_L6I0H7ek",
+			authDomain: "dash-to-do-list-ss7.firebaseapp.com",
+			projectId: "dash-to-do-list-ss7",
+			storageBucket: "dash-to-do-list-ss7.appspot.com",
+			messagingSenderId: "781685363869",
+			appId: "1:781685363869:web:4146a11f931169439ff074",
+			measurementId: "G-YNCH2SQXTC"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+
+	<script src="main.js"></script>
+</body>
+
+</html>

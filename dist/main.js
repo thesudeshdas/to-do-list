@@ -1,0 +1,1 @@
+(()=>{"use strict";firebase.database().ref().child("object").on("value",(e=>console.log(e.val())))})();
