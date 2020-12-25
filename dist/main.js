@@ -1,1 +1,1 @@
-(()=>{"use strict";firebase.database().ref().child("object").on("value",(e=>console.log(e.val())))})();
+(()=>{"use strict";const e=[];firebase.database().ref("project/name/").on("value",(n=>{n.forEach((n=>{n.key;var t=n.val();e.push(t)})),console.log(e)}));document.getElementById("content").append((()=>{const e=document.createElement("div");return e.innerHTML='\n    <div class="side-bar">\n      <h1>Dashnote</h1>\n      <ul id="navbar-list">\n        \n      </ul>\n    </div>\n  ',e})())})();

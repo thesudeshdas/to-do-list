@@ -1,21 +1,34 @@
-// const navigation = () => {
-//   const navbar = document.createElement('div');
-//   navbar.innerHTML = `
-//     <div class="side-bar">
-//       <h1>Dashnote</h1>
-//       <ul>
-//         <li>PRoject 1</li>
-//         <li>PRoject 2</li>
-//         <li>PRoject 3</li>
-//         <li>PRoject 4</li>
-//         <li>PRoject 5</li>
-//         <li>PRoject 6</li>
-//         <li>PRoject 7</li>
-//       </ul>
-//     </div>
-//   `
+const projectList = [];
 
-//   return navbar;
-// }
+const dbRefObject = firebase.database().ref('project/name/');
+  
+dbRefObject.on('value', (snapshot) => {
+  snapshot.forEach((childSnapshot) => {
+    var childKey = childSnapshot.key;
+    var childData = childSnapshot.val();
+    // ...
+    projectList.push(childData);
+    
+    
+  });
+  console.log(projectList);
+});
 
-// export default navigation;
+const navigation = () => {
+
+  const navbar = document.createElement('div');
+  navbar.innerHTML = `
+    <div class="side-bar">
+      <h1>Dashnote</h1>
+      <ul id="navbar-list">
+        
+      </ul>
+    </div>
+  `;
+  
+  
+
+  return navbar;
+}
+
+export default navigation;
