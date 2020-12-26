@@ -9,18 +9,7 @@ function displayProject(obj) {
   content.append(title);
   
   console.log(obj.title)
-  
-  
-  
-  
-  
 }
-
-
-
-
-
-
 
 
 const showProject = (projectToBeShown) => {
