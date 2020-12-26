@@ -6,17 +6,34 @@ body, html {
     margin: 0;
 }
 
+#content {
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
 
 
 .side-bar {
     background-color: red;
     width: 20vw;
     height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    text-align: center;
+    float: left;
 }
 
-/* .side-bar h1 {
-} */
+.side-bar ul {
+    font-size: 2em;
+    padding-left: 0;
+}
+
+.side-bar ul li {
+    list-style: none;
+}
+
+.side-bar h1 {
+    margin-left: 0;
+}
+
