@@ -1,5 +1,5 @@
 import createDefaultDatabase from "../storage/defaultDatabse";
-import showProject from "./projectDetails"
+import showProjects from "./projectDetails"
 
 const navigation = () => {
   const navbar = document.createElement('div')
@@ -17,7 +17,7 @@ const navigation = () => {
     li.textContent = item;
     // li.setAttribute('onclick', '() => {console.log("Hello")}')
     
-    li.addEventListener('click', (e) => showProject(e.target.textContent));
+    li.addEventListener('click', (e) => showProjects(e.target.textContent));
     
     
     ul.append(li);

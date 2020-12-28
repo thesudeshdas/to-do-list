@@ -1,18 +1,18 @@
 
 
-function displayProject(obj) {
+function displayProject(project) {
   const content = document.getElementById('content');
   
   const title = document.createElement('h1');
-  title.textContent = obj.title;
+  title.textContent = project.title;
+  
+  console.log(project)
 
   content.append(title);
-  
-  console.log(obj.title)
 }
 
 
-const showProject = (projectToBeShown) => {
+const showProjects = (projectToBeShown) => {
   const todos = JSON.parse(localStorage.getItem('todos'))
   
   for (const todo in todos) {
@@ -23,4 +23,4 @@ const showProject = (projectToBeShown) => {
    
 }
 
-export default showProject;
+export default showProjects;
